@@ -1,0 +1,438 @@
+\documentclass[11pt]{article}
+
+% Edit this customize for an instructor
+
+\newcommand{\instructorpronoun}[1]{his}
+
+% Use this when displaying a new command
+
+\newcommand{\command}[1]{``\lstinline{#1}''}
+\newcommand{\program}[1]{\lstinline{#1}}
+\newcommand{\url}[1]{\lstinline{#1}}
+\newcommand{\channel}[1]{\lstinline{#1}}
+\newcommand{\option}[1]{``{#1}''}
+\newcommand{\step}[1]{``{#1}''}
+
+\usepackage{pifont}
+\newcommand{\checkmark}{\ding{51}}
+\newcommand{\naughtmark}{\ding{55}}
+
+\usepackage{listings}
+\lstset{
+  basicstyle=\small\ttfamily,
+  columns=flexible,
+  breaklines=true
+}
+
+% Define the headers and footers
+
+\usepackage{fancyhdr}
+
+\usepackage[margin=1in]{geometry}
+\usepackage{fancyhdr}
+
+\pagestyle{fancy}
+
+\fancyhf{}
+\rhead{Computer Science 203}
+\lhead{Syllabus}
+\rfoot{Page \thepage}
+\lfoot{Spring 2019}
+
+% Use elastic spacing around the headers
+
+\usepackage{titlesec}
+\titlespacing\section{0pt}{6pt plus 4pt minus 2pt}{4pt plus 2pt minus 2pt}
+
+\newcommand{\syllabustitle}[1]
+{
+  \begin{center}
+    \begin{center}
+      \bf
+      CMPSC 203\\Software Engineering\\
+      Spring 2019\\
+      \medskip
+    \end{center}
+    \bf
+    #1
+  \end{center}
+}
+
+\begin{document}
+
+\thispagestyle{empty}
+
+\syllabustitle{Syllabus}
+
+\vspace*{-1em}
+\subsection*{Course Instructor}
+Dr.\ Gregory M.\ Kapfhammer\\
+\noindent Office Location: Alden Hall 108 \\
+\noindent Office Phone: +1 814--332--2880 \\
+\noindent Email: \url{gkapfham@allegheny.edu} \\
+\noindent Twitter: \url{@GregKapfhammer} \\
+\noindent Web Site: \url{https://www.gregorykapfhammer.com/}
+
+\subsection*{Instructor's Office Hours}
+
+\begin{itemize}
+
+  \itemsep0em
+
+  \item Wednesday: 10:00 am--11:00 am and 2:30 pm--3:30 pm (15 minute time slots)
+
+  \item Thursday: 11:00 am--12:00 noon and 2:30 pm--3:30 pm (15 minute time slots)
+
+  \item Friday: 10:00 am--11:00 am and 11:00--12:00 noon (15 minute time slots)
+
+\end{itemize}
+
+\noindent To schedule a meeting with me during my office hours, please visit my
+web site and click the ``About $\rightarrow$ Schedule'' link in the top
+left-hand corner. Now, you can browse my office hours or schedule an appointment
+by clicking the correct link and then reserving an open time slot. Students are
+also encouraged to post appropriate questions to a channel in Slack, which is
+available at \url{https://CMPSC203Spring2019.slack.com/}, and monitored by the
+instructor and the teaching assistants.
+
+\subsection*{Course Meeting Schedule}
+
+Lecture, Discussion, and Group Work: Monday and Wednesday, 1:30 pm--2:20 pm \\
+Practical Session: Friday, 1:30 pm--2:20 pm \\
+Laboratory Session: Tuesday, 2:30 pm--4:20 pm \\
+Final Examination: Friday, May 3, 2019 at 7:00 pm
+
+\subsection*{Course Description}
+
+\begin{quote}
+
+A human-centric study of the principles used during the engineering of
+high-quality software systems. In addition to examining the human behaviors and
+social processes undergirding software development methodologies, students
+participate in teams tasked with designing, developing, and delivering a
+significant software application for a customer. During a weekly laboratory
+session, students use state-of-the-art software engineering, management, and
+communication tools to complete projects, reporting on their results through
+both written documents and oral presentations. Prerequisite: CMPSC
+101. Distribution Requirements: SB, SP.\@ \\
+
+\end{quote}
+
+\noindent Students can access the course's web site by visiting the instructor's
+site, clicking the ``Courses'' link in the top left-hand corner, and looking for
+the name and number of this course in the listing.
+
+\subsection*{Course Objectives}
+
+The process of developing software involves the application of a number of
+interesting techniques and tools. During this class, we will explore the phases
+of the software engineering lifecycle and examine the principles, challenges,
+and open questions associated with each phase. Throughout the semester, we will
+investigate the interplay between the theory and practice of software
+engineering. Specifically, we will delve into the details of requirements
+elicitation, design, implementation, testing, documentation, maintenance, and
+deployment through a discussion of book chapters and articles from the software
+engineering literature. Along with learning more about how to effectively work
+in a team of diverse software developers, students will enhance their ability
+to write and present ideas about software in a clear and compelling fashion.
+Students will develop an understanding of the fascinating connections between
+computer science and software engineering and other disciplines in the social
+and natural sciences and the humanities. Students also will gain software
+engineering experience when completing practical assignments and large-scale
+projects.
+
+\vspace*{-.25em}
+\subsection*{Performance Objectives}
+
+At the completion of this class, a student should be aware of the fundamental
+challenges associated with software engineering. Furthermore, students should
+be comfortable with a wide array of concepts, methodologies, techniques, and
+tools that they apply to the problem of developing large software systems. A
+successful student will emerge with more than an understanding of the tools
+(e.g., text editors, compilers, linters, debuggers, automated testing
+frameworks, integrated development environments, and version control systems)
+that a software engineer uses. A student should also have an understanding of
+the software engineering lifecycle and the activities that take place in each
+of its phases. Finally, a student should have an understanding of some of the
+current research and the open questions in the field of software engineering.
+After completing this class, a student should be equipped for further graduate
+study in the fields of computer science and software engineering. The student
+should also be able to participate in real-world software development projects
+by adeptly using cutting-edge software tools and working with a team of diverse
+developers.
+
+\vspace*{-.25em}
+\subsection*{Required Textbooks}
+
+\noindent{\em Cooperative Software Design}. Andrew J.\ Ko.
+Online Edition, 14 chapters, 2018.
+%
+\vspace*{.25em}
+
+\noindent{\em A Philosophy of Software Design}. John Ousterhout.
+First Edition, 178 pages, 2018.
+%
+\vspace*{.25em}
+
+\noindent{\em Think Python}. Allen B. Downey.
+Second Edition or Online Edition, 292 pages, 2015.
+%
+\vspace*{.25em}
+
+\noindent{\em Exercises in Programming Style}. Cristina Videira Lopes.
+First Edition, 282 pages, 2014.
+%
+\vspace*{.25em}
+
+\noindent{\em Python Testing with Pytest}. Brian Okken.
+First Edition, 197 pages, 2017.
+%
+\vspace*{.5em}
+
+\noindent
+The instructor will also reference, when necessary, these optional books:
+%
+\vspace*{.25em}
+
+\noindent{\em Software Engineering: Theory and Practice}. Shari Lawrence
+Pfleeger and Joanne M. Atlee.\\ Fourth Edition, 792 pages, 2010.
+%
+\vspace*{.25em}
+
+\noindent{\em The Mythical Man Month}. Frederick P.\ Brooks, Jr.
+Second Edition, 336 pages, 1995.
+
+\vspace*{-.25em}
+\subsection*{Course Policies}
+
+\subsubsection*{Grading}
+
+The grade that a student receives in this class will be based on the following
+categories. All of these percentages are approximate and, if the need to do so
+presents itself, it is possible for the course instructor to change the assigned
+percentages during the academic semester.
+
+\renewcommand{\arraystretch}{1.2}
+
+\begin{center}
+  \begin{tabular}{ll}
+    Class Participation        & 5\%  \\
+    First Examination          & 10\% \\
+    Second Examination         & 10\% \\
+    Final Examination          & 15\% \\
+    Practical Assignments      & 15\% \\
+    Project Reports            & 15\% \\
+    Software Projects          & 30\%
+  \end{tabular}
+\end{center}
+
+\noindent
+These grading categories have the following definitions:
+
+\vspace*{-.05in}
+
+\begin{itemize}
+
+  \item {\em Class Participation\/}: All students are required to actively
+    participate during all of the course sessions. Your participation will take
+    forms such as answering questions about the reading assignments, asking
+    constructive questions of group members, giving presentations, and leading a
+    discussion. You also must regularly participate in the discussions in the
+    course's Slack workspace. A student will receive an interim and final letter
+    grade for this category.
+
+  \item {\em First and Second Examinations\/}: The first and second interim
+    examinations will cover all of the material in their associated module(s),
+    as outlined on a review sheet. While the second examination is not
+    cumulative, it will assume that a student has a basic understanding of the
+    material that was the focus of the first examination. The date for the first
+    and second examinations will be announced at least one week in advance of
+    the scheduled date. Unless prior arrangements are made with the course
+    instructor, all students will be expected to take these examinations on the
+    scheduled date and complete the tests in the stated period of time.
+
+  \item {\em Final Examination\/}: The final examination is a three-hour
+    cumulative test. By enrolling in this course, students agree that, unless
+    there are extenuating circumstances, they will take the final examination at
+    the date and time stated on the first page of the syllabus.
+
+  \item {\em Practical Assignments\/}: Graded on a credit/no-credit basis, these
+    assignments allow students to enhance the technical skills that they learned
+    in previous class and laboratory sessions.
+
+  \item {\em Project Reports\/}: Graded on both a letter-grade and a
+    credit/no-credit basis, these reports invite students to furnish evidence of
+    their mastery of the technical and professional knowledge and skills in
+    software engineering. Students will submit reports and receive feedback on
+    ways in which they can improve their mastery of the aforementioned skills.
+    At the completion of a project, students will submit a report documenting
+    their overall knowledge and skills.
+
+  \item {\em Software Projects\/}: Graded on a letter-grade basis, these
+    team-based projects invite students to design, implement, test, document,
+    deploy, and maintain a high-quality software system released under an
+    open-source licence through a publicly available version control repository.
+    In addition to encouraging students to enhance their technical knowledge and
+    skills, these projects will invite you to refine your ability to work
+    effectively with a team.
+
+\end{itemize}
+
+\subsubsection*{Assignment Submission and Evaluation}
+
+All assignments will have a stated due date. Electronic versions of the
+practical assignments and project reports must be submitted to a student's
+GitHub repository; students will learn how to use version control with GitHub
+during the first laboratory and practical sessions. Electronic versions of the
+software projects must also be submitted through a designated public GitHub
+repository. No credit will be awarded for any course work that is not submitted
+to your GitHub repository with the required name.
+%
+Unless specified otherwise, all project reports must be turned in at the
+beginning of the session that is one week after the day the assignment was
+released. Practical assignments will be due at the start of the next class
+session, unless otherwise stated. The two software projects will have deadlines
+determined in consultation with the students in the course. Without making
+special arrangements with the instructor, no work will be accepted after the
+published deadline.
+%
+Using a report that the instructor shares with you through the commit log in
+GitHub, you will privately received a grade for and feedback on each assignment.
+Your grade will be a function of whether or you not completed correct work and
+submitted it by the deadline. Other factors (e.g., the quality of your source
+code, technical writing, and team work) will also influence your assignment's
+grade.
+
+\vspace*{-.1in}
+
+\subsubsection*{Course Attendance}
+
+It is mandatory for all students to attend all of the class, practical, and
+laboratory sessions. If, due to extenuating circumstances, you will not be able
+to attend a session, then, whenever possible, please see the course instructor
+at least one week in advance to describe your situation. Students who miss more
+than five unexcused sessions will have their final grade in the course reduced
+by one letter grade. Students who miss more than ten of the aforementioned
+events will fail the course.
+
+\vspace*{-.05in}
+
+\subsubsection*{Use of Laboratory Facilities}
+
+Throughout the semester, we will employ many different software tools that
+computer scientists use during the design, implementation, and evaluation of
+computer software. Since it is unlikely that a student's unmodified computer
+will have the software tools that correctly support the completion of the
+course's assignments, unless there are documented extenuating circumstances,
+students are advised to complete all of their work for this course while using
+the laboratory facilities.
+
+\vspace*{-.1in}
+
+\subsubsection*{Class Preparation}
+
+In order to minimize confusion and maximize learning, students must invest time
+to prepare for the class discussions, lectures, and practical sessions. During
+the class periods, the course instructor will often pose challenging questions
+that could require group discussion, the creation of a program or data set, a
+vote on a thought-provoking issue, or a group presentation. Only students who
+have prepared for class by reading the assigned material and reviewing the
+current project and practical assignments will be able to effectively
+participate in these discussions about software engineering.
+
+More importantly, only prepared students will be able to acquire the knowledge
+and skills that they need to be successful in this course, subsequent courses,
+and the field of software engineering. In order to help students remain
+organized and to effectively prepare for classes, the course instructor will
+maintain a class schedule with reading assignments and presentation slides.
+During the class sessions students will also be required to download, use, and
+modify programs and data sets that are made available through means such as the
+course web site and a GitHub repository.
+
+\subsubsection*{Seeking Assistance}
+
+Students who are struggling to understand the knowledge and skills developed in
+a class, laboratory, or practical session are encouraged to seek assistance from
+the course instructor, the teaching assistants, or the departmental tutors.
+Throughout the semester, students should, within the bounds of the Honor Code,
+ask and answer questions on the Slack workspace for our course; please request
+assistance from the instructor, teaching assistants, and tutors first through
+Slack before sending an email. Students who need the course instructor's
+assistance must schedule a meeting through \instructorpronoun{} web site and
+come to the meeting with all of the details needed to discuss their question.
+
+\subsubsection*{Using GitHub}
+
+When completing the software projects, students must give evidence of their work
+through GitHub's issue tracker and logs of pull requests and commits. Unless you
+make prior arrangements with the instructor, only work submitted through GitHub
+will count towards your grade for these projects.
+
+\subsubsection*{Using Email}
+
+Although we will primarily use Slack for non-GitHub communication, I will
+sometimes use email to send announcements about important matters such as
+schedule changes. It is your responsibility to check your email at least once a
+day and to ensure that you can reliably send and receive emails. This class
+policy is based on the statement about the use of email that appears in {\em The
+Compass}, the College's student handbook; please see the instructor if you do
+not have this handbook.
+
+\subsubsection*{Honor Code}
+
+The Academic Honor Program that governs the entire academic program at Allegheny
+College is described in the Allegheny Academic Bulletin. The Honor Program
+applies to all work that is submitted for academic credit or to meet non-credit
+requirements for graduation at Allegheny College. This includes all work
+assigned for this class (e.g., examinations, laboratory assignments, and the
+final project). All students who have enrolled in the College will work under
+the Honor Program. Each student who has matriculated at the College has
+acknowledged the following pledge:
+
+\vspace*{-.10in}
+%
+\begin{quote}
+%
+  I hereby recognize and pledge to fulfill my responsibilities, as defined in
+  the Honor Code, and to maintain the integrity of both myself and the College
+  community as a whole.
+%
+\end{quote}
+%
+\vspace*{-.10in}
+
+\noindent It is understood that an important part of the learning process in any
+course, and particularly one in software engineering, derives from thoughtful
+discussions with teachers and fellow students. Such dialogue is encouraged.
+However, it is necessary to distinguish carefully between the student who
+discusses the principles underlying a problem with others and the student who
+produces assignments that are identical to, or merely variations on, someone
+else's work. While it is acceptable for students in this class to discuss their
+programs, documents, and reports with their classmates, deliverables that are
+nearly identical to the work of others will be taken as evidence of violating
+the \mbox{Honor Code}.
+
+\subsubsection*{Disability Services}
+
+The Americans with Disabilities Act (ADA) is a federal anti-discrimination
+statute that provides comprehensive civil rights protection for persons with
+disabilities. Among other things, this legislation requires all students with
+disabilities be guaranteed a learning environment that provides for reasonable
+accommodation of their disabilities. Students with disabilities who believe they
+may need accommodations in this class are encouraged to contact Disability
+Services at 332--2898. Disability Services is part of the Learning Commons and
+is located in Pelletier Library. Please do this as soon as possible to ensure
+that approved accommodations are implemented in a timely fashion.
+
+\subsection*{Welcome to an Adventure in Software Engineering}
+
+In reference to software, Frederick Brooks, Jr.\ wrote in Chapter One of MMM,
+``The magic of myth and legend has come true in our time.'' Software is a
+pervasive aspect of our society that changes how we think and act. High quality
+software also has the potential to positively influence the lives of people.
+Moreover, the specification, design, implementation, testing, maintenance, and
+documentation of software are exciting and rewarding activities! At the start of
+this class, I invite you to pursue, with great enthusiasm and vigor, this
+adventure in software engineering.
+
+\end{document}
