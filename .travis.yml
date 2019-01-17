@@ -1,0 +1,15 @@
+before_install:
+- sudo apt-get -qq update && sudo apt-get install -y --no-install-recommends latexmk
+  texlive-fonts-extra texlive-fonts-recommended texlive-latex-base texlive-latex-extra
+  texlive-latex-recommended
+script:
+- mkdir _build
+- latexmk -pdf -outdir=_build cs203S2019_syllabus.tex
+deploy:
+  provider: releases
+  api_key:
+    secure: rjXashwCdS2Fv712gN7E/LkqGpnNyNojvgoRVp7OnB0DpPFTZCLJ3z0ImrRoax/zp9ja8NzylBE+xK+7JPxPSU6JQCh5Y0NrqLLUbzn1GQVHJmO4TD2MNqVi5nJP6wTeGU63c1kR2HceG6e6VVYaqAnVZ/uZhJNw/x0qmY/nr7LQlPoGah8nXc5RYaHs/dJaioNioC4Zer0sNBhUcXaMQ7Kvhh2XfJjeFx0exocU/tWcFP2irukPxpuckpL0lbIIviPfc778RQ+2pboTPh7qqWzLZrL+OvpdINWP3uAl5FDepGnY+MnOGTeoigOZQwnaZnePa9+GwRCvmI4Itpg6+Y3dul529f3v0uaRpvTWgGNG+HldJ9hkQQSvipprwjhgMOqg0PPEQVjjT0UmXD0W9yE+40kUsYyvxLmsVn/7/glL89ePKMCaQWbQ6RJN+J80g91jAO9Mr/I7x69H0DC+tARKkTX3iAMPLOwW6QvGxndFYES28DD/yLwOtryCXIgIoYIfulunSBcwbu2eMHhkzybbgUK6neo/6Ys1OY6mKNLlVMRCQdWMtAt61RhtKysGcbrF/C77IKUTlO4w1PtM29/rWFBrv7vP7HMvfNUUkN9MlMghH9YqWbTwllozrLvmXgJEnCNR1oUK2NmIVoH8A4kVXc3fSo5V3nxdFN9+OtE=
+  file: _build/cs203S2019_syllabus.pdf
+  skip_cleanup: true
+  on:
+    tags: true
